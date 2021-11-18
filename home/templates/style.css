@@ -1,0 +1,107 @@
+body{
+	background-color: mintcream;
+	margin: 0;
+}
+
+.header {
+	background-color: powderblue;
+	color: white;
+	padding: 2rem 0;
+
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+}
+
+.header a{
+	font-size: 1.2em;
+	letter-spacing: 5px;
+	color: white;
+	text-decoration: none;
+}
+.logo{
+	font-family: fantasy;
+}
+
+.menu-icon{
+	display: none;
+}
+
+.logo-nav-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.navigation ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.navigation ul li{
+	display: inline-block;
+}
+
+.navigation ul li a{
+	display: block;
+	padding: 0.5rem 1rem;
+	transition: all 0.4s linear;
+	border-radius: 5px;
+}
+
+.navigation ul li a:hover{
+	background-color: mediumturquoise;
+}
+
+.main{
+	padding-top: 12rem;
+}
+.footer {
+	background-color: #f2f2f2;
+	padding: 4rem 0;
+	text-align: center;
+	margin-top: 6rem;
+}
+
+
+
+
+
+@media (max-width: 767px){
+
+	.menu-icon{
+		display: block;
+		cursor: pointer;
+		padding: 0.5rem 0;
+	}
+
+	.navigation{
+	width: 100%;
+	margin-top: 1rem;
+}
+
+	.navigation ul {
+		display: none;	
+	}
+	.navigation ul.show{
+		display: block;
+	}
+
+	.navigation ul li{
+	display: block;
+}
+
+	.navigation ul li a{
+	display: block;
+	padding: 0.5rem 0;
+	transition: all 0.4s linear;
+	border-radius: 5px;
+}
+
+	.navigation ul li a:hover{
+	background-color: mediumturquoise;
+}
+}

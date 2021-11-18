@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% block title %}<title>Green Mind</title>{% endblock %}
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	{% load static %}
+	<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+	</head>
+<body>
+	<source src="https://img2.freepng.es/20171216/47a/globe-png-5a35928b355af3.5651476115134603632185.jpg" type="media">
+	<header class="header">
+		<div class="container logo-nav-container">
+			{% block sidebar %}
+			<a href="#" class="logo">Green Mind</a>
+			<span class="menu-icon">Ver menú</span>
+			<nav class="navigation">
+				<ul class="show">
+					<li><a href="#">Calcula tu huella</a></li>
+					<li><a href="#">Historial de registros</a></li>
+					<li><a href="#">Perfil</a></li>
+				</ul>
+			{% endblock %}
+		</div>
+	</header>
+
+	<main class="main">
+		<div class="container">
+			<h1>Título</h1>
+			<p>párrafo</p>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<p>Página diseñada por @</p>
+		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="scripts.js"></script>
+</body>
+</html>
