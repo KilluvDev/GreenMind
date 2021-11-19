@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,38 +7,70 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-	{% load static %}
-	<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
 	</head>
 <body>
-	<source src="https://img2.freepng.es/20171216/47a/globe-png-5a35928b355af3.5651476115134603632185.jpg" type="media">
 	<header class="header">
 		<div class="container logo-nav-container">
 			{% block sidebar %}
-			<a href="#" class="logo">Green Mind</a>
+			<a href="/Green-mind/" class="logo">Green Mind</a>
 			<span class="menu-icon">Ver menú</span>
 			<nav class="navigation">
 				<ul class="show">
-					<li><a href="#">Calcula tu huella</a></li>
-					<li><a href="#">Historial de registros</a></li>
-					<li><a href="#">Perfil</a></li>
+					<li><a href="/Green-mind/Calcula-tu-huella/">Calcula tu huella</a></li>
+					<li><a href="/Green-mind/History-of-use/">Historial de registros</a></li>
+					<li><a href="/Green-mind/User-account/">Perfil</a></li>
 				</ul>
 			{% endblock %}
 		</div>
 	</header>
-
 	<main class="main">
 		<div class="container">
-			<h1>Título</h1>
-			<p>párrafo</p>
+			<h1>11 datos sobre la contaminación de los que tienes que ser consciente </h1>
+			<p>No solo cada 5 de junio hay que recordar el valor que tiene este planeta. No se trata de concientizar solo en el Día Mundial del Medio Ambiente. La Tierra es el planeta más excepcional del cual tenemos conocimiento, y como bien sabemos, el único capaz de albergar nuestra especie en este momento. En el sitio te hemos explicado lo importante que es cuidar de nuestro planeta en innumerables ocasiones, pero nunca es suficiente.</p>
+
+			<p>En el siguiente recorrido te voy a dejar 11 datos sobre la contaminación de los que necesariamente debes ser consciente, como por ejemplo, el hecho de que mientras has leído estos 2 párrafos introductorios, 1 niño ha muerto por el consumo de agua contaminada, como ocurre cada 8 segundos... comienza con el recorrido.</p>
+
+			<h2>11. Los estadounidenses son los que más contaminan</h2>
+			<p>Estados Unidos de América tiene casi el 5% de toda la población mundial. Sin embargo, utiliza el 25% de todos los recursos de la Tierra y produce el 30% de toda la basura en el mundo, siendo el país que más contamina.</p>
+			
+			<h2>10. Cuánta basura hay en los océanos</h2>
+			<p>Cada año, 6000 millones de kilogramos de basura son arrojados a los océanos. La mayor parte está constituida por plástico, material que provoca la muerte de más de 1 millón de aves, 100.000 mamíferos e innumerables cantidades de peces y crustáceos, cada año. En promedio, por cada millón de toneladas de petróleo que se transporta en los océanos, cerca de 1 tonelada se derrama en el agua. </p>
+
+			<h2>9. Cuántos niños mueren por la contaminación del agua</h2>
+			<p>Cada 8 segundos muere 1 niño por causas relacionadas con el consumo de agua contaminada. Sólo en India, se estima que por día mueren 1000 menores de edad por el consumo, la exposición prolongada o enfermedades relacionadas con la contaminación del agua.</p>
+
+			<h2>8. La contaminación del aire en China y Bombay</h2>
+			<p>El aire de la ciudad de Beijing (o Pekín), capital de China, está tan, pero tan contaminado por las actividades humanas que respirar allí implica exactamente los mismos riesgos que fumar 21 cigarrillos por día. Peor aún es la situación en Bombay, India, donde respirar durante 1 día equivale a fumar 100 cigarrillos, según los expertos.</p>
+
+			<h2>7. La contaminación del aire en el resto del mundo</h2>
+			<p>Según los últimos estudios relacionados con la contaminación del aire a nivel global, 1 de cada 8 muertes en el mundo entero tienen que ver con la contaminación en el aire. </p>
+
+			<h2>6. Radiactividad en el Pacífico</h2>
+			<p>Tras la crisis nuclear en Japón, producto de la catástrofe que provocó el tsunami de 2011, 11 millones de litros de agua con extremos niveles de radiactividad fueron arrojados al océano Pacífico. Días más tarde, se detectaron peces contaminados con material radiactivo a más de 80 km de la costa.</p>
+
+			<h2>5. Muertes por agua contaminada a nivel mundial</h2>
+			<p>En China, cerca de 700 millones de personas beben agua que está contaminada. Según las estadísticas, 3400 millones de personas, en el mundo entero, mueren cada año por afecciones relacionadas con el agua contaminada.</p>
+
+			<h2>4. Enfermedades respiratorias en México D.F.</h2>
+			<p>Según la OMS, sólo en la ciudad de México D.F., hay 1 millón de personas con enfermedades respiratorias relacionadas con la contaminación del aire en la ciudad. Por las mismas razones, cada año muere un promedio de 6400 personas en la ciudad.</p>
+
+			<h2>3. El caso de Botsuana</h2>
+			<p>A pesar de que Botsuana, al sur de África, tiene menos de 2 millones de habitantes, es el segundo país más contaminado del mundo. El desarrollo extremo de la industria mineral y la deforestación son los dos factores más significativos en la cuestión.</p>
+
+			<h2>2. Plomo en la sangre de los niños de Zambia</h2>
+			<p>En la ciudad de Kabwe, Zambia, análisis sanguíneos en los niños demostraron un contenido de plomo entre 5 y hasta 10 veces mayor de lo que es considerado peligroso. Los niños de Kabwe registran el máximo nivel de plomo en la sangre de todo el mundo y tienen altísimos niveles de mortandad.</p>
+
+			<h2>1. Nuestros organismos evidencian el cambio</h2>
+			<p>En 1920, una serie de intensas investigaciones a nivel mundial analizaron los compuestos químicos y los diferentes tipos de sustancias que constituyen el cuerpo humano en el común de la gente. Las mismas investigaciones se desarrollan aún hoy en día, pero con la excepción de que actualmente se pueden identificar entre 300 y 500 compuestos químicos que no figuraban en los análisis de años anteriores.</p>
+			<p>Ser consciente de todos estos datos sobre la contaminación en el mundo es muy importante; reflexionar al respecto lo es aun más, pero nada es tan importante como actuar, y una excelente forma de hacerlo es educando. Te invito a dejar tu opinión o tu aporte debajo, en la sección de comentarios.</p>
+
 		</div>
 	</main>
 	<footer class="footer">
 		<div class="container">
-			<p>Página diseñada por @</p>
+			<p>Green Mind es una iniciativa de estudiantes de ingeniería civil en informática de la universidad Federico Santa María.</p>
 		</div>
 	</footer>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script src="scripts.js"></script>
 </body>
 </html>

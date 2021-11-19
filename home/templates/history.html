@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	{% block title %}<title>Green Mind</title>{% endblock %}
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	</head>
+<body>
+	<header class="header">
+		<div class="container logo-nav-container">
+			{% block sidebar %}
+			<a href="/Green-mind/" class="logo">Green Mind</a>
+			<span class="menu-icon">Ver menú</span>
+			<nav class="navigation">
+				<ul class="show">
+					<li><a href="/Green-mind/Calcula-tu-huella/">Calcula tu huella</a></li>
+					<li><a href="/Green-mind/History-of-use/">Historial de registros</a></li>
+					<li><a href="/Green-mind/User-account/">Perfil</a></li>
+				</ul>
+			{% endblock %}
+		</div>
+	</header>
+	<main class="main">
+		<div class="container">
+			<form></form>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<p>Green Mind es una iniciativa de estudiantes de ingeniería civil en informática de la universidad Federico Santa María.</p>
+		</div>
+	</footer>
+</body>
+</html>
