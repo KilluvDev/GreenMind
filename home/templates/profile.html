@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+{% for post in posts %}
+
+
+
+<article>
+	<div>
+		<h2>{{ post.user.username }}</h2>
+		<time data-time="#">{{ post.timestamp }}</time>
+		<div class="post">{{ post.content }}</div>
+	</div>
+</article>
+
+
+{% endfor %}
+
+{% endblock %}

@@ -1,0 +1,880 @@
+Last login: Sat Nov 20 12:56:01 on console
+ignaciotrujillo@Air-de-Ignacio ~ % cd desktop/greenmind
+ignaciotrujillo@Air-de-Ignacio greenmind % subl .
+ignaciotrujillo@Air-de-Ignacio greenmind % python3 manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 973, in _bootstrap_inner
+    self.run()
+  File "/opt/homebrew/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 910, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/core/management/base.py", line 419, in check
+    all_issues = checks.run_checks(
+  File "/opt/homebrew/lib/python3.9/site-packages/django/core/checks/registry.py", line 76, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/opt/homebrew/lib/python3.9/site-packages/django/urls/resolvers.py", line 412, in check
+    for pattern in self.url_patterns:
+  File "/opt/homebrew/lib/python3.9/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/homebrew/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/ignaciotrujillo/Desktop/GreenMind/GreenMind/urls.py", line 6, in <module>
+    path('', include('home.urls')),
+  File "/opt/homebrew/lib/python3.9/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/opt/homebrew/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/ignaciotrujillo/Desktop/GreenMind/home/urls.py", line 6
+    path('Green-mind/', local_views.home),
+    ^
+SyntaxError: invalid syntax
+^C%                                                                             ignaciotrujillo@Air-de-Ignacio greenmind % python3 manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 973, in _bootstrap_inner
+    self.run()
+  File "/opt/homebrew/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 910, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/core/management/base.py", line 419, in check
+    all_issues = checks.run_checks(
+  File "/opt/homebrew/lib/python3.9/site-packages/django/core/checks/registry.py", line 76, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/opt/homebrew/lib/python3.9/site-packages/django/urls/resolvers.py", line 412, in check
+    for pattern in self.url_patterns:
+  File "/opt/homebrew/lib/python3.9/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/homebrew/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/ignaciotrujillo/Desktop/GreenMind/GreenMind/urls.py", line 6, in <module>
+    path('', include('home.urls')),
+  File "/opt/homebrew/lib/python3.9/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/opt/homebrew/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 983, in get_code
+  File "<frozen importlib._bootstrap_external>", line 913, in source_to_code
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/ignaciotrujillo/Desktop/GreenMind/home/urls.py", line 6
+    path('Green-mind/', local_views.home),
+    ^
+SyntaxError: invalid syntax
+^C%                                                                             ignaciotrujillo@Air-de-Ignacio greenmind % python3 manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+November 20, 2021 - 16:49:10
+Django version 3.2.6, using settings 'GreenMind.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Not Found: /
+[20/Nov/2021 16:49:21] "GET / HTTP/1.1" 404 2233
+Not Found: /favicon.ico
+[20/Nov/2021 16:49:21] "GET /favicon.ico HTTP/1.1" 404 2284
+[20/Nov/2021 16:49:21,122] - Broken pipe from ('127.0.0.1', 49478)
+
+Not Found: /Green-mind/
+[20/Nov/2021 16:49:24] "GET /Green-mind/ HTTP/1.1" 404 2284
+Not Found: /Green-mind/
+[20/Nov/2021 16:49:30] "GET /Green-mind/ HTTP/1.1" 404 2284
+/Users/ignaciotrujillo/Desktop/GreenMind/home/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+November 20, 2021 - 16:49:38
+Django version 3.2.6, using settings 'GreenMind.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Internal Server Error: /Green-mind/
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ignaciotrujillo/Desktop/GreenMind/home/views.py", line 14, in home
+    return render(request,'home/index.html')
+  File "/opt/homebrew/lib/python3.9/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home/index.html
+[20/Nov/2021 16:49:39] "GET /Green-mind/ HTTP/1.1" 500 72235
+/Users/ignaciotrujillo/Desktop/GreenMind/home/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+November 20, 2021 - 16:50:17
+Django version 3.2.6, using settings 'GreenMind.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+/Users/ignaciotrujillo/Desktop/GreenMind/home/views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+November 20, 2021 - 16:50:47
+Django version 3.2.6, using settings 'GreenMind.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Internal Server Error: /Green-mind/
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ignaciotrujillo/Desktop/GreenMind/home/views.py", line 14, in home
+    return render(request,'home/index.html', {})
+  File "/opt/homebrew/lib/python3.9/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home/index.html
+[20/Nov/2021 16:50:57] "GET /Green-mind/ HTTP/1.1" 500 72247
+Internal Server Error: /Green-mind/
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ignaciotrujillo/Desktop/GreenMind/home/views.py", line 14, in home
+    return render(request,'home/index.html', {})
+  File "/opt/homebrew/lib/python3.9/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home/index.html
+[20/Nov/2021 16:50:58] "GET /Green-mind/ HTTP/1.1" 500 72247
+Internal Server Error: /Green-mind/
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ignaciotrujillo/Desktop/GreenMind/home/views.py", line 14, in home
+    return render(request,'home/index.html', {})
+  File "/opt/homebrew/lib/python3.9/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home/index.html
+[20/Nov/2021 16:50:58] "GET /Green-mind/ HTTP/1.1" 500 72247
+Internal Server Error: /Green-mind/
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ignaciotrujillo/Desktop/GreenMind/home/views.py", line 14, in home
+    return render(request,'home/index.html', {})
+  File "/opt/homebrew/lib/python3.9/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home/index.html
+[20/Nov/2021 16:51:58] "GET /Green-mind/ HTTP/1.1" 500 72247
+Internal Server Error: /Green-mind/
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ignaciotrujillo/Desktop/GreenMind/home/views.py", line 14, in home
+    return render(request,'home/index.html', {})
+  File "/opt/homebrew/lib/python3.9/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home/index.html
+[20/Nov/2021 16:52:31] "GET /Green-mind/ HTTP/1.1" 500 72247
+Internal Server Error: /Green-mind/
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ignaciotrujillo/Desktop/GreenMind/home/views.py", line 14, in home
+    return render(request,'home/index.html', {})
+  File "/opt/homebrew/lib/python3.9/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home/index.html
+[20/Nov/2021 16:54:22] "GET /Green-mind/ HTTP/1.1" 500 72247
+/Users/ignaciotrujillo/Desktop/GreenMind/home/views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+November 20, 2021 - 16:54:40
+Django version 3.2.6, using settings 'GreenMind.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Internal Server Error: /Green-mind/
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ignaciotrujillo/Desktop/GreenMind/home/views.py", line 14, in home
+    return render(request,'index.html', {})
+  File "/opt/homebrew/lib/python3.9/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/loader_tags.py", line 103, in find_template
+    template, origin = context.template.engine.find_template(
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/base.py", line 531, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 9: 'static'. Did you forget to register or load this tag?
+[20/Nov/2021 16:54:41] "GET /Green-mind/ HTTP/1.1" 500 138289
+Internal Server Error: /Green-mind/
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ignaciotrujillo/Desktop/GreenMind/home/views.py", line 14, in home
+    return render(request,'index.html', {})
+  File "/opt/homebrew/lib/python3.9/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/loader_tags.py", line 103, in find_template
+    template, origin = context.template.engine.find_template(
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/base.py", line 531, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 9: 'static'. Did you forget to register or load this tag?
+[20/Nov/2021 16:54:42] "GET /Green-mind/ HTTP/1.1" 500 138289
+Internal Server Error: /Green-mind/
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ignaciotrujillo/Desktop/GreenMind/home/views.py", line 14, in home
+    return render(request,'index.html', {})
+  File "/opt/homebrew/lib/python3.9/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/loader_tags.py", line 103, in find_template
+    template, origin = context.template.engine.find_template(
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/base.py", line 531, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 9: 'static'. Did you forget to register or load this tag?
+[20/Nov/2021 16:54:42] "GET /Green-mind/ HTTP/1.1" 500 138289
+/Users/ignaciotrujillo/Desktop/GreenMind/home/views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+November 20, 2021 - 16:55:31
+Django version 3.2.6, using settings 'GreenMind.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Internal Server Error: /Green-mind/
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ignaciotrujillo/Desktop/GreenMind/home/views.py", line 14, in home
+    return render(request,'index.html', {})
+  File "/opt/homebrew/lib/python3.9/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/loader_tags.py", line 103, in find_template
+    template, origin = context.template.engine.find_template(
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/base.py", line 531, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 9: 'static'. Did you forget to register or load this tag?
+[20/Nov/2021 16:55:34] "GET /Green-mind/ HTTP/1.1" 500 138279
+[20/Nov/2021 16:55:52] "GET /Green-mind/ HTTP/1.1" 200 6307
+Not Found: /Green-mind/css/style.css
+[20/Nov/2021 16:55:53] "GET /Green-mind/css/style.css HTTP/1.1" 404 2323
+[20/Nov/2021 16:56:22] "GET /Green-mind/ HTTP/1.1" 200 6314
+Not Found: /Green-mind/static/css/style.css
+[20/Nov/2021 16:56:22] "GET /Green-mind/static/css/style.css HTTP/1.1" 404 2344
+[20/Nov/2021 16:56:23] "GET /Green-mind/ HTTP/1.1" 200 6314
+Not Found: /Green-mind/static/css/style.css
+[20/Nov/2021 16:56:23] "GET /Green-mind/static/css/style.css HTTP/1.1" 404 2344
+[20/Nov/2021 16:56:29] "GET /Green-mind/ HTTP/1.1" 200 6316
+Not Found: /Green-mind/. static/css/style.css
+[20/Nov/2021 16:56:29] "GET /Green-mind/.%20static/css/style.css HTTP/1.1" 404 2352
+[20/Nov/2021 16:56:34] "GET /Green-mind/ HTTP/1.1" 200 6316
+Not Found: /Green-mind/static/css/style.css
+[20/Nov/2021 16:56:34] "GET /Green-mind/static/css/style.css HTTP/1.1" 404 2344
+[20/Nov/2021 16:56:43] "GET /Green-mind/ HTTP/1.1" 200 6303
+Not Found: /Green-mind/style.css
+[20/Nov/2021 16:56:43] "GET /Green-mind/style.css HTTP/1.1" 404 2311
+[20/Nov/2021 16:56:44] "GET /Green-mind/ HTTP/1.1" 200 6303
+Not Found: /Green-mind/style.css
+[20/Nov/2021 16:56:44] "GET /Green-mind/style.css HTTP/1.1" 404 2311
+[20/Nov/2021 16:57:05] "GET /Green-mind/ HTTP/1.1" 200 6309
+Not Found: /style.css
+[20/Nov/2021 16:57:05] "GET /style.css HTTP/1.1" 404 2278
+[20/Nov/2021 16:57:36] "GET /Green-mind/ HTTP/1.1" 200 6320
+[20/Nov/2021 16:57:36] "GET /static/css/style.css HTTP/1.1" 304 0
+Internal Server Error: /Green-mind/
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/loader_tags.py", line 103, in find_template
+    template, origin = context.template.engine.find_template(
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/engine.py", line 129, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: home/layout.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ignaciotrujillo/Desktop/GreenMind/home/views.py", line 14, in home
+    return render(request,'index.html', {})
+  File "/opt/homebrew/lib/python3.9/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: home/layout.html
+[20/Nov/2021 16:59:13] "GET /Green-mind/ HTTP/1.1" 500 116087
+[20/Nov/2021 16:59:19] "GET /Green-mind/ HTTP/1.1" 200 6320
+Not Found: /Green-mind/History-of-use/
+[20/Nov/2021 16:59:51] "GET /Green-mind/History-of-use/ HTTP/1.1" 404 2329
+[20/Nov/2021 17:14:12] "GET /Green-mind/ HTTP/1.1" 200 6320
+/Users/ignaciotrujillo/Desktop/GreenMind/home/views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+November 20, 2021 - 17:18:37
+Django version 3.2.6, using settings 'GreenMind.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[20/Nov/2021 17:19:29] "GET /Green-mind/ HTTP/1.1" 200 6320
+[20/Nov/2021 17:20:26] "GET /Green-mind/ HTTP/1.1" 200 6320
+[20/Nov/2021 17:20:34] "GET /Green-mind/ HTTP/1.1" 200 6320
+[20/Nov/2021 17:20:46] "GET /Green-mind/ HTTP/1.1" 200 6320
+[20/Nov/2021 17:21:11] "GET /Green-mind/ HTTP/1.1" 200 6320
+/Users/ignaciotrujillo/Desktop/GreenMind/home/models.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 973, in _bootstrap_inner
+    self.run()
+  File "/opt/homebrew/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 910, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/core/management/commands/runserver.py", line 110, in inner_run
+    autoreload.raise_last_exception()
+  File "/opt/homebrew/lib/python3.9/site-packages/django/utils/autoreload.py", line 87, in raise_last_exception
+    raise _exception[1]
+  File "/opt/homebrew/lib/python3.9/site-packages/django/core/management/__init__.py", line 375, in execute
+    autoreload.check_errors(django.setup)()
+  File "/opt/homebrew/lib/python3.9/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/apps/registry.py", line 114, in populate
+    app_config.import_models()
+  File "/opt/homebrew/lib/python3.9/site-packages/django/apps/config.py", line 301, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/opt/homebrew/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/ignaciotrujillo/Desktop/GreenMind/home/models.py", line 4, in <module>
+    class Profile(models.Model):
+  File "/Users/ignaciotrujillo/Desktop/GreenMind/home/models.py", line 5, in Profile
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+NameError: name 'User' is not defined
+/Users/ignaciotrujillo/Desktop/GreenMind/home/models.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 973, in _bootstrap_inner
+    self.run()
+  File "/opt/homebrew/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 910, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/core/management/commands/runserver.py", line 110, in inner_run
+    autoreload.raise_last_exception()
+  File "/opt/homebrew/lib/python3.9/site-packages/django/utils/autoreload.py", line 87, in raise_last_exception
+    raise _exception[1]
+  File "/opt/homebrew/lib/python3.9/site-packages/django/core/management/__init__.py", line 375, in execute
+    autoreload.check_errors(django.setup)()
+  File "/opt/homebrew/lib/python3.9/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/apps/registry.py", line 114, in populate
+    app_config.import_models()
+  File "/opt/homebrew/lib/python3.9/site-packages/django/apps/config.py", line 301, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/opt/homebrew/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/ignaciotrujillo/Desktop/GreenMind/home/models.py", line 4, in <module>
+    class Profile(models.Model):
+  File "/Users/ignaciotrujillo/Desktop/GreenMind/home/models.py", line 5, in Profile
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+NameError: name 'User' is not defined
+/Users/ignaciotrujillo/Desktop/GreenMind/home/models.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 973, in _bootstrap_inner
+    self.run()
+  File "/opt/homebrew/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 910, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/core/management/commands/runserver.py", line 110, in inner_run
+    autoreload.raise_last_exception()
+  File "/opt/homebrew/lib/python3.9/site-packages/django/utils/autoreload.py", line 87, in raise_last_exception
+    raise _exception[1]
+  File "/opt/homebrew/lib/python3.9/site-packages/django/core/management/__init__.py", line 375, in execute
+    autoreload.check_errors(django.setup)()
+  File "/opt/homebrew/lib/python3.9/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/apps/registry.py", line 114, in populate
+    app_config.import_models()
+  File "/opt/homebrew/lib/python3.9/site-packages/django/apps/config.py", line 301, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/opt/homebrew/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/ignaciotrujillo/Desktop/GreenMind/home/models.py", line 4, in <module>
+    class Profile(models.Model):
+  File "/Users/ignaciotrujillo/Desktop/GreenMind/home/models.py", line 5, in Profile
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+NameError: name 'User' is not defined
+/Users/ignaciotrujillo/Desktop/GreenMind/home/models.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 973, in _bootstrap_inner
+    self.run()
+  File "/opt/homebrew/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 910, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/core/management/commands/runserver.py", line 110, in inner_run
+    autoreload.raise_last_exception()
+  File "/opt/homebrew/lib/python3.9/site-packages/django/utils/autoreload.py", line 87, in raise_last_exception
+    raise _exception[1]
+  File "/opt/homebrew/lib/python3.9/site-packages/django/core/management/__init__.py", line 375, in execute
+    autoreload.check_errors(django.setup)()
+  File "/opt/homebrew/lib/python3.9/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/apps/registry.py", line 114, in populate
+    app_config.import_models()
+  File "/opt/homebrew/lib/python3.9/site-packages/django/apps/config.py", line 301, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/opt/homebrew/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/ignaciotrujillo/Desktop/GreenMind/home/models.py", line 4, in <module>
+    class Profile(models.Model):
+  File "/Users/ignaciotrujillo/Desktop/GreenMind/home/models.py", line 5, in Profile
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+NameError: name 'User' is not defined
+/Users/ignaciotrujillo/Desktop/GreenMind/home/models.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 973, in _bootstrap_inner
+    self.run()
+  File "/opt/homebrew/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 910, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/core/management/commands/runserver.py", line 110, in inner_run
+    autoreload.raise_last_exception()
+  File "/opt/homebrew/lib/python3.9/site-packages/django/utils/autoreload.py", line 87, in raise_last_exception
+    raise _exception[1]
+  File "/opt/homebrew/lib/python3.9/site-packages/django/core/management/__init__.py", line 375, in execute
+    autoreload.check_errors(django.setup)()
+  File "/opt/homebrew/lib/python3.9/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/apps/registry.py", line 114, in populate
+    app_config.import_models()
+  File "/opt/homebrew/lib/python3.9/site-packages/django/apps/config.py", line 301, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/opt/homebrew/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/ignaciotrujillo/Desktop/GreenMind/home/models.py", line 4, in <module>
+    class Profile(models.Model):
+  File "/Users/ignaciotrujillo/Desktop/GreenMind/home/models.py", line 5, in Profile
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+NameError: name 'User' is not defined
+/Users/ignaciotrujillo/Desktop/GreenMind/home/models.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 973, in _bootstrap_inner
+    self.run()
+  File "/opt/homebrew/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 910, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/core/management/commands/runserver.py", line 110, in inner_run
+    autoreload.raise_last_exception()
+  File "/opt/homebrew/lib/python3.9/site-packages/django/utils/autoreload.py", line 87, in raise_last_exception
+    raise _exception[1]
+  File "/opt/homebrew/lib/python3.9/site-packages/django/core/management/__init__.py", line 375, in execute
+    autoreload.check_errors(django.setup)()
+  File "/opt/homebrew/lib/python3.9/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/opt/homebrew/lib/python3.9/site-packages/django/apps/registry.py", line 114, in populate
+    app_config.import_models()
+  File "/opt/homebrew/lib/python3.9/site-packages/django/apps/config.py", line 301, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/opt/homebrew/Cellar/python@3.9/3.9.6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/ignaciotrujillo/Desktop/GreenMind/home/models.py", line 4, in <module>
+    class Profile(models.Model):
+  File "/Users/ignaciotrujillo/Desktop/GreenMind/home/models.py", line 5, in Profile
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+NameError: name 'User' is not defined
+/Users/ignaciotrujillo/Desktop/GreenMind/home/models.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+November 20, 2021 - 17:28:45
+Django version 3.2.6, using settings 'GreenMind.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+/Users/ignaciotrujillo/Desktop/GreenMind/home/models.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+November 20, 2021 - 17:28:46
+Django version 3.2.6, using settings 'GreenMind.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+^C%                                                                             ignaciotrujillo@Air-de-Ignacio greenmind % python3 manage.py makemigrations
+Migrations for 'home':
+  home/migrations/0001_initial.py
+    - Create model Profile
+    - Create model Post
+ignaciotrujillo@Air-de-Ignacio greenmind % python3 manage.py migrate       
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, home, sessions
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying auth.0012_alter_user_first_name_max_length... OK
+  Applying home.0001_initial... OK
+  Applying sessions.0001_initial... OK
+ignaciotrujillo@Air-de-Ignacio greenmind % python3 manage.py createsuperuser 
+Username (leave blank to use 'ignaciotrujillo'): greenmind
+Email address: ignaciotrujillo85@gmail.com
+Password: 
+Password (again): 
+The password is too similar to the username.
+Bypass password validation and create user anyway? [y/N]: y
+Superuser created successfully.
+ignaciotrujillo@Air-de-Ignacio greenmind % greenmindproject

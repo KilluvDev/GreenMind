@@ -1,12 +1,7 @@
-from django.urls import path
-
-from GreenMind import views as local_views
-
-# path('Green-mind/',local_views.),
+from django.contrib import admin
+from django.urls import path, include
 
 urlpatterns = [
-    path('Green-mind/', local_views.home),
-    path('Green-mind/Calcula-tu-huella/',local_views.form),
-    path('Green-mind/User-account/',local_views.useracc),
-    path('Green-mind/History-of-use/',local_views.history),
-]
+    path('admin/', admin.site.urls),
+    path('', include('home.urls')),
+] 
