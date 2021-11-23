@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+{% load humanize %}
+{% block content %}
+
+<h2 class="title2">Medición del usuario {{ post.user.username }}</h2>
+
+{% for post in posts %}
+
+
+<br>
+		<time data-time="#">Medición realizada el día {{ post.timestamp }}</time>
+		<div class="post">Resultados de la medición {{ post.content }}</div>
+<br>
+{% endfor %}
+<!--<time data-time="#">{{ post.timestamp|naturaltime }}</time>>
+{% endblock %}

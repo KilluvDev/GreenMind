@@ -6,16 +6,20 @@ body{
 .header {
 	background-color: powderblue;
 	color: white;
-	padding: 2rem 0;
-
 	position: fixed;
+	padding: 1rem 0;
 	left: 0;
 	top: 0;
 	right: 0;
 }
 
+
+.divider{
+	margin: 125px;
+}
+
 .header a{
-	font-size: 1.2em;
+	font-size: 1em;
 	letter-spacing: 5px;
 	color: white;
 	text-decoration: none;
@@ -33,9 +37,11 @@ body{
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
+	height: 100px;
 }
 
 .navigation ul{
+	right: 0;
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -56,15 +62,13 @@ body{
 	background-color: mediumturquoise;
 }
 
-.main{
-	padding-top: 12rem;
-}
 .footer {
 	background-color: #f2f2f2;
 	padding: 4rem 0;
 	text-align: center;
 	margin-top: 6rem;
 }
+
 
 
 @media (max-width: 767px){
