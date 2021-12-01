@@ -5,11 +5,15 @@ from django.utils import timezone
 # Create your models here.
 class Profile(models.Model):
 	user = models.OneToOneField(User, on_delete=models.CASCADE)
-	#image
-
 	def __str__(self):
 		return f'Perfil de {self.user.username}'
 
+'''
+class User(models.Model):
+	email = 
+	user =
+	password = 
+'''
 
 class Post(models.Model):
 	user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='posts')

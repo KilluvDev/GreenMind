@@ -2,8 +2,8 @@
 {% load humanize %}
 {% block content %}
 
-<h2 class="title2">Medición del usuario {{ post.user.username }}</h2>
-
+{% if user.is_authenticated %}
+<h2 class="title2">Medición del usuario {{request.user}}</h2>
 {% for post in posts %}
 
 
@@ -12,5 +12,9 @@
 		<div class="post">Resultados de la medición {{ post.content }}</div>
 <br>
 {% endfor %}
+{% else %}
+<p>No has iniciado sesión</p>
+{% endif %}
+
 <!--<time data-time="#">{{ post.timestamp|naturaltime }}</time>>
 {% endblock %}

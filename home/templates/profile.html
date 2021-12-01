@@ -2,10 +2,13 @@
 
 {% block content %}
 
-{% for post in posts %}
+<h2 class="title2">Perfil del usuario {{request.user}}</h2>
 
-<h2 class="title2">Medición del usuario {{ post.user.username }}</h2>
-
-{% endfor %}
-
+<p>Como iniciativa, te invitamos a realizar una profundización sobre como poder mejorar nuestros hábitos e incrementar nuestros conocimientos para hacer nuestra vida biocompatible con el ambiente.</p>
+<br>
+<br>
+<a href="https://www.youtube.com/watch?v=nQ1pPLb1Fo4"> Presione aquí para más información acerca de la huella de carbono</a>
+<br>
+<br>
+<a href="https://www.youtube.com/watch?v=wNQ5wvGmnEk">Presione aquí para más información acerca de la huella de carbono y cómo reducirla</a>
 {% endblock %}

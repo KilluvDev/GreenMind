@@ -1,8 +1,11 @@
 #Django
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import *
-from django.contrib.auth.forms import UserCreationForm
-
+from django.contrib import messages
+from django.http import HttpResponseRedirect
+from .forms import UserCreation
+from django.contrib.auth.views import LoginView
+from django.urls import reverse_lazy
 # Utilities
 from datetime import datetime
 
@@ -13,9 +16,19 @@ def home(request):
 	return render(request,'index.html', {})
 
 def profile(request):
-	posts = Post.objects.all()
+	posts = Profile.objects.all()
 	context = { 'posts': posts}
 	return render(request, 'profile.html', context)
+
+
+class get_name(LoginView):
+	template_name = 'login.html'
+	fields = '__all__'
+	redirect_authenticated_user = True
+
+	def get_success_url(self):
+		return '../'
+
 
 
 def historyofuse(request):
@@ -27,13 +40,4 @@ def calculator(request):
 	return render(request,'calculator.html')
 
 def register(request):
-	if request.method == 'POST':
-		form = UserCreationForm(request.POST)
-		if form.is_valid():
-			username = form.cleaned_data['username']
-			message.success(request, f'Usuario {username} creado')
-	else:
-		form = UserCreationForm()
-
-	context = { 'form ': form}
-	return render(request, 'register.html', context)
+	return render(request, 'register.html')

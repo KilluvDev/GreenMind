@@ -20,12 +20,15 @@
 				<ul class="show">
 					<li><a href="/Carbon-footprint/">Calcula tu huella</a></li>
 					<li><a href="/History-of-use/">Historial de registros</a></li>
+					{% if user.is_authenticated %}
 					<li><a href="/User-account/">Perfil</a></li>
+					<li><a href="/Logout/">Logout</a></li>
+					{% else %}
 					<li><a href="/Register/">Regístrate</a></li>
+					{% endif %}
 				</ul>
 		</div>
 	</header>
-
 	<!-------------------------------------
 	---------------------------------->
 	<div class="divider">
