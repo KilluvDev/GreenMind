@@ -4,6 +4,8 @@ from django.conf import settings
 from django.conf.urls.static import static
 from .views import get_name
 from django.contrib.auth.views import LogoutView
+from django.views.generic.edit import FormView
+from .views import RegisterPage
 
 
 urlpatterns = [	
@@ -13,6 +15,6 @@ urlpatterns = [
 	path('User-account/', local_views.profile),
 	path('Carbon-footprint/', local_views.calculator),
 	path('History-of-use/', local_views.historyofuse),
-	path('Register/', local_views.register),
+	path('Register/', RegisterPage.as_view(success_url='../') ),
 
 ]
